@@ -1,6 +1,6 @@
 <?php
 
-
+$msg = $_GET['msg'];
 
 require "vendor/autoload.php";
 
@@ -23,7 +23,7 @@ $pushID = array(
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('สวัสดีแม่ลูด จากพ่อหนึ่ง');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($msg);
 
 //กรณีส่งคนเดียว
 //$response = $bot->pushMessage($pushID, $textMessageBuilder);
