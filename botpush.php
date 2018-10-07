@@ -8,7 +8,7 @@ $access_token = 'uB+caqQPQ4E0qTpMIebEgIU/LbqlqvKUna/RetLvgYz9eij00sCPPGtLxAV3yo7
 
 $channelSecret = 'bd2b748e66d2081807ad9281be4afe39';
 
-$pushID = 'U68140a2a00330006c76aee0172d323a9';
+$pushID = 'U68140a2a00330006c76aee0172d323a9'; //Id น้องโบนัส
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
